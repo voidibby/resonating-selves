@@ -1,13 +1,12 @@
 <p align="center">
   <a href="https://www.interface.ufg.ac.at/blog/resonating-selves">
-    <img alt="Exhibition logo" src="https://github.com/voidibby/resonating-selves/blob/main/src/images/logo.svg" width="60" />
+    <img alt="Exhibition logo" src="https://github.com/voidibby/resonating-selves/blob/main/src/images/logo.svg" width="500" />
   </a>
 </p>
-<h1 align="center">
-  Resonating Selves
-</h1>
 
 This repository host the development environment for the exhibition website "Resonating Selves" from the Interface Cultures department at the Ars Electronica Festival 2023 in Linz, Austria.
+
+This project is based on Gatsby. Below is the initial documentation of this file.
 
 ## 🚀 Quick start
 
