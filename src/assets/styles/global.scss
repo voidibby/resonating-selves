@@ -1,0 +1,105 @@
+@import "/src/assets/styles/variables";
+@import "/src/assets/styles/resets";
+
+@font-face {
+	font-family: "PPRader";
+	font-weight: 700;
+	font-style: normal;
+	src: url(../../static/fonts/PPRader-Bold.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "PPRader";
+	font-weight: 700;
+	font-style: italic;
+	src: url(../../static/fonts/PPRader-BoldItalic.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "PPRader";
+	font-weight: 400;
+	font-style: normal;
+	src: url(../../static/fonts/PPRader-Regular.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "PPRader";
+	font-weight: 400;
+	font-style: italic;
+	src: url(../../static/fonts/PPRader-Italic.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "PPRader";
+	font-weight: 100;
+	font-style: normal;
+	src: url(../../static/fonts/PPRader-Thin.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "PPRader";
+	font-weight: 100;
+	font-style: italic;
+	src: url(../../static/fonts/PPRader-ThinItalic.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "PPSupplyMono";
+	font-weight: 400;
+	font-style: normal;
+	src: url(../../static/fonts/PPSupplyMono-Regular.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "PPSupplyMono";
+	font-weight: 100;
+	font-style: normal;
+	src: url(../../static/fonts/PPSupplyMono-Ultralight.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "PPSupplySans";
+	font-weight: 400;
+	font-style: normal;
+	src: url(../../static/fonts/PPSupplySans-Regular.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "PPSupplySans";
+	font-weight: 100;
+	font-style: normal;
+	src: url(../../static/fonts/PPSupplySans-Ultralight.otf) format("opentype");
+}
+
+* {
+}
+
+body {
+	width: 100%;
+}
+
+@mixin media-sm {
+	@media screen and (min-width: 640px) {
+		@content;
+	}
+}
+@mixin media-md {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+@mixin media-lg {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+@mixin media-xl {
+	@media screen and (min-width: 1280px) {
+		@content;
+	}
+}
+@mixin media-2xl {
+	@media screen and (min-width: 1536px) {
+		@content;
+	}
+}
