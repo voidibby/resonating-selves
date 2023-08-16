@@ -1,0 +1,18 @@
+@import "/src/assets/styles/global.scss";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  a {
+    flex-grow: 1;
+    margin: 2em;
+  }
+  @include media-md {
+    flex-direction: row;
+  }
+  svg {
+  }
+}

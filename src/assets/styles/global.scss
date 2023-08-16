@@ -2,104 +2,204 @@
 @import "/src/assets/styles/resets";
 
 @font-face {
-	font-family: "PPRader";
-	font-weight: 700;
-	font-style: normal;
-	src: url(../../static/fonts/PPRader-Bold.otf) format("opentype");
+  font-family: "PPRader";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../../static/fonts/PPRader-Bold.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "PPRader";
-	font-weight: 700;
-	font-style: italic;
-	src: url(../../static/fonts/PPRader-BoldItalic.otf) format("opentype");
+  font-family: "PPRader";
+  font-weight: 700;
+  font-style: italic;
+  src: url(../../static/fonts/PPRader-BoldItalic.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "PPRader";
-	font-weight: 400;
-	font-style: normal;
-	src: url(../../static/fonts/PPRader-Regular.otf) format("opentype");
+  font-family: "PPRader";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../../static/fonts/PPRader-Regular.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "PPRader";
-	font-weight: 400;
-	font-style: italic;
-	src: url(../../static/fonts/PPRader-Italic.otf) format("opentype");
+  font-family: "PPRader";
+  font-weight: 400;
+  font-style: italic;
+  src: url(../../static/fonts/PPRader-Italic.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "PPRader";
-	font-weight: 100;
-	font-style: normal;
-	src: url(../../static/fonts/PPRader-Thin.otf) format("opentype");
+  font-family: "PPRader";
+  font-weight: 100;
+  font-style: normal;
+  src: url(../../static/fonts/PPRader-Thin.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "PPRader";
-	font-weight: 100;
-	font-style: italic;
-	src: url(../../static/fonts/PPRader-ThinItalic.otf) format("opentype");
+  font-family: "PPRader";
+  font-weight: 100;
+  font-style: italic;
+  src: url(../../static/fonts/PPRader-ThinItalic.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "PPSupplyMono";
-	font-weight: 400;
-	font-style: normal;
-	src: url(../../static/fonts/PPSupplyMono-Regular.otf) format("opentype");
+  font-family: "PPSupplyMono";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../../static/fonts/PPSupplyMono-Regular.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "PPSupplyMono";
-	font-weight: 100;
-	font-style: normal;
-	src: url(../../static/fonts/PPSupplyMono-Ultralight.otf) format("opentype");
+  font-family: "PPSupplyMono";
+  font-weight: 100;
+  font-style: normal;
+  src: url(../../static/fonts/PPSupplyMono-Ultralight.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "PPSupplySans";
-	font-weight: 400;
-	font-style: normal;
-	src: url(../../static/fonts/PPSupplySans-Regular.otf) format("opentype");
+  font-family: "PPSupplySans";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../../static/fonts/PPSupplySans-Regular.otf) format("opentype");
 }
 
 @font-face {
-	font-family: "PPSupplySans";
-	font-weight: 100;
-	font-style: normal;
-	src: url(../../static/fonts/PPSupplySans-Ultralight.otf) format("opentype");
+  font-family: "PPSupplySans";
+  font-weight: 100;
+  font-style: normal;
+  src: url(../../static/fonts/PPSupplySans-Ultralight.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 900;
+  font-style: normal;
+  src: url(../../static/fonts/RedHatDisplay-Black.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 900;
+  font-style: italic;
+  src: url(../../static/fonts/RedHatDisplay-BlackItalic.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 800;
+  font-style: normal;
+  src: url(../../static/fonts/RedHatDisplay-ExtraBold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 800;
+  font-style: italic;
+  src: url(../../static/fonts/RedHatDisplay-ExtraBoldItalic.ttf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../../static/fonts/RedHatDisplay-Bold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 700;
+  font-style: italic;
+  src: url(../../static/fonts/RedHatDisplay-BoldItalic.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 600;
+  font-style: normal;
+  src: url(../../static/fonts/RedHatDisplay-SemiBold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 600;
+  font-style: italic;
+  src: url(../../static/fonts/RedHatDisplay-SemiBoldItalic.ttf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 500;
+  font-style: normal;
+  src: url(../../static/fonts/RedHatDisplay-Medium.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 500;
+  font-style: italic;
+  src: url(../../static/fonts/RedHatDisplay-MediumItalic.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../../static/fonts/RedHatDisplay-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 400;
+  font-style: italic;
+  src: url(../../static/fonts/RedHatDisplay-Italic.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 300;
+  font-style: normal;
+  src: url(../../static/fonts/RedHatDisplay-Light.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay";
+  font-weight: 300;
+  font-style: italic;
+  src: url(../../static/fonts/RedHatDisplay-LightItalic.ttf) format("opentype");
 }
 
 * {
 }
 
 body {
-	width: 100%;
+  width: 100%;
 }
 
 @mixin media-sm {
-	@media screen and (min-width: 640px) {
-		@content;
-	}
+  @media screen and (min-width: 640px) {
+    @content;
+  }
 }
 @mixin media-md {
-	@media screen and (min-width: 768px) {
-		@content;
-	}
+  @media screen and (min-width: 768px) {
+    @content;
+  }
 }
 @mixin media-lg {
-	@media screen and (min-width: 1024px) {
-		@content;
-	}
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
 }
 @mixin media-xl {
-	@media screen and (min-width: 1280px) {
-		@content;
-	}
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
 }
 @mixin media-2xl {
-	@media screen and (min-width: 1536px) {
-		@content;
-	}
+  @media screen and (min-width: 1536px) {
+    @content;
+  }
 }

@@ -1,0 +1,75 @@
+@import "/src/assets/styles/global.scss";
+
+.testText {
+  font-family: PPRader, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  white-space: pre-line;
+  line-height: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+h1 {
+  font-family: PPRader, Arial, sans-serif;
+  font-size: 3em;
+}
+
+p {
+  line-height: 1.2em;
+}
+
+body {
+  font-family: RedHatDisplay, Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  background: rgb(64, 1, 64);
+}
+
+main {
+  width: calc(100% - 2em);
+  margin: auto;
+  background: rgb(165, 7, 165);
+  border-radius: 2em;
+}
+
+.exhibition-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1em;
+  max-width: 600px;
+  margin: auto;
+  h1 {
+    margin-right: 2em;
+  }
+  p {
+    max-width: 600px;
+  }
+  @include media-xl {
+    max-width: 800px;
+    flex-direction: row;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  @include media-xl {
+    max-width: 1200px;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+}
