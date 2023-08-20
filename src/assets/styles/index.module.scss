@@ -5,6 +5,22 @@
   font-weight: 700;
 }
 
+html {
+  background: #02004f;
+}
+
+body {
+  font-family: RedHatDisplay, Arial, sans-serif;
+  font-size: calc(18px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+  /*font-size: 20px;*/
+  color: white;
+  background-image: url("../images/background-main.png");
+  background-position: center;
+  background-repeat: repeat;
+  position: absolute;
+  min-height: 100vh;
+}
+
 h1,
 h2,
 h3,
@@ -23,24 +39,35 @@ li {
 h1 {
   font-family: PPRader, Arial, sans-serif;
   font-size: 3em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: PPRader, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 p {
-  line-height: 1.2em;
+  line-height: 1.5em;
+  font-size: 1.1em;
 }
 
-body {
-  font-family: RedHatDisplay, Arial, sans-serif;
-  font-size: 20px;
+a {
   color: white;
-  background: rgb(64, 1, 64);
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 main {
+  background-image: url("../images/background-texture.png");
+  background-position: center;
+  background-repeat: repeat;
   width: calc(100% - 2em);
   margin: auto;
-  background: rgb(165, 7, 165);
   border-radius: 2em;
+  margin-top: 2em;
+  padding-bottom: 3em;
 }
 
 .exhibition-text {
@@ -50,7 +77,6 @@ main {
   padding-bottom: 3em;
   padding-left: 1em;
   padding-right: 1em;
-  font-size: 1em;
   max-width: 600px;
   margin: auto;
   h1 {
@@ -73,3 +99,83 @@ main {
     padding-right: 0em;
   }
 }
+
+.projects-list-wrapper {
+  h1 {
+    padding: 0.5em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    max-width: 600px;
+    margin: auto;
+    @include media-xl {
+      max-width: 800px;
+      flex-direction: row;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    @include media-xl {
+      max-width: 1200px;
+      padding-left: 0em;
+      padding-right: 0em;
+    }
+  }
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2em;
+  @include media-md {
+    padding: 0.5em;
+  }
+  a {
+    position: relative;
+    margin: 0.2em;
+    width: calc(100% - 0.4em);
+    @include media-sm {
+      width: calc(50% - 0.4em);
+    }
+    @include media-md {
+      margin: 0.5em;
+      width: calc(33.333333% - 1em);
+    }
+    &:hover img {
+      transform: scale(1.005);
+    }
+    h4 {
+      display: block;
+      position: absolute;
+      bottom: 0.5em;
+      left: 0;
+      color: white;
+      font-size: 1.5em;
+      line-height: 1em;
+      padding-bottom: 0;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #393c8b;
+      opacity: 0.2;
+      transition: 0.1s;
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
+}
+/*
+{mdx.fields__slug}.js
+
+{images.map((image) => (
+              <Link to="/contact">
+                <GatsbyImage image={image} alt="A project" />
+              </Link>
+            ))}
+
+*/

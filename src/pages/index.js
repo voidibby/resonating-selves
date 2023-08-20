@@ -1,14 +1,19 @@
 import * as React from "react"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import * as css from "../assets/styles/index.module.scss"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  //console.log(data.allMdx.edges[0].node.frontmatter.image_files[0])
+
   return (
     <>
       <Header></Header>
       <main>
-        <div className={css.exhibitionText}>
+        <section className={css.exhibitionText}>
           <h1>RESONATING{"\n"}SELVES—</h1>
           <p>
             In an era where truth is increasingly elusive and subjective, the
@@ -50,14 +55,175 @@ const IndexPage = () => {
             art and experience the profound impact of AI as it shapes our
             perceptions of truth, identity, and the complex narratives that
             intertwine them.
+            {"\n\n"}
+            <strong>Faculty:</strong>
+            {"\n\n"}
+            Manuela Naveau (AT){"\n"}
+            Laurent Mignonneau (FR){"\n"}
+            Fabricio Lamoncha (ES){"\n"}
+            Michaela Ortner (AT){"\n"}
+            Gertrude Hörlesberger (AT){"\n"}
           </p>
-        </div>
+        </section>
+        <section className={css.projectsListWrapper}>
+          <h1>EXHIBITED WORKS</h1>
+          <div className={css.projectsList}>
+            {data.allMdx.nodes.map((node) => {
+              if (node.frontmatter.location === "00-postcity") {
+                return (
+                  <Link to={node.fields.slug}>
+                    <GatsbyImage
+                      image={getImage(node.frontmatter.image_files[0])}
+                      alt="A project"
+                    />
+                    <div
+                      className={css.imageOverlay}
+                      id={`${node.fields.slug.replace(/\//g, "")}`}
+                    ></div>
+                    <h4>{node.frontmatter.title}</h4>
+                  </Link>
+                )
+              }
+              return null
+            })}
+          </div>
+
+          <h1>WORKS IN DEEP SPACE</h1>
+          <div className={css.projectsList}>
+            {data.allMdx.nodes.map((node) => {
+              if (node.frontmatter.location === "01-deepspace") {
+                return (
+                  <Link to={node.fields.slug}>
+                    <GatsbyImage
+                      image={getImage(node.frontmatter.image_files[0])}
+                      alt="A project"
+                    />
+                    <div
+                      className={css.imageOverlay}
+                      id={`${node.fields.slug.replace(/\//g, "")}`}
+                    ></div>
+                    <h4>{node.frontmatter.title}</h4>
+                  </Link>
+                )
+              }
+              return null
+            })}
+          </div>
+
+          <h1>ADITIONAL PROJECTS</h1>
+          <div className={css.projectsList}>
+            {data.allMdx.nodes.map((node) => {
+              if (node.frontmatter.location === "02-other") {
+                return (
+                  <Link to={node.fields.slug}>
+                    <GatsbyImage
+                      image={getImage(node.frontmatter.image_files[0])}
+                      alt="A project"
+                    />
+                    <div
+                      className={css.imageOverlay}
+                      id={`${node.fields.slug.replace(/\//g, "")}`}
+                    ></div>
+                    <h4>{node.frontmatter.title}</h4>
+                  </Link>
+                )
+              }
+              return null
+            })}
+          </div>
+        </section>
+        <section className={css.exhibitionText}>
+          <p>
+            <h2>Exhibiting Artists:</h2>
+            Ahmed Jamal (EGY){"\n"}
+            Aizhan Saganayeva (KZ){"\n"}
+            Alex Fallica (IT){"\n"}
+            Behiye Erdemir (TR){"\n"}
+            Bálint Budai (HU){"\n"}
+            Danielius Marius Šermukšnis (LT){"\n"}
+            Emma Silvana Tripaldi (IT){"\n"}
+            Ghazal Hosseini (IR){"\n"}
+            Hanif Haghtalab (IR){"\n"}
+            Ingrid Graz (AT){"\n"}
+            Jelena Mönch (DE){"\n"}
+            Joann Lee (KR){"\n"}
+            Katherine Romero Martinez (CO){"\n"}
+            Katsuki Nogami (JP){"\n"}
+            Kevin Blackistone (USA){"\n"}
+            Linaá Pulido Barragán (CO){"\n"}
+            Maria Konstantinova (RU){"\n"}
+            Maria Orciuoli (IT){"\n"}
+            Martina Pizzigoni (IT){"\n"}
+            Mathias Gartner (AT){"\n"}
+            Miguel Rangil (ES){"\n"}
+            Razieh Kooshki (IR){"\n"}
+            Rene Preuer (AT){"\n"}
+            Salma Aly (EGY){"\n"}
+            Simon Weckert (DE){"\n"}
+            Smirna Kulenovic (BA){"\n"}
+            Sofia Talanti (IT){"\n"}
+            Till Schönwetter (DE){"\n"}
+            Tomomi Watanabe (JP){"\n"}
+            Viktória Angyal (HU){"\n"}
+            Volkan Dinçer (TR){"\n"}
+            Younggon Kim (KR){"\n"}
+            Yuma Yanagisawa (JP){"\n"}
+            {"\n\n"}
+            <h2>Faculty:</h2>
+            Manuela Naveau (AT){"\n"}
+            Laurent Mignonneau (FR){"\n"}
+            Fabricio Lamoncha (ES){"\n"}
+            Michaela Ortner (AT){"\n"}
+            Gertrude Hörlesberger (AT){"\n"}
+            {"\n\n"}
+            <h2>Production Team:</h2>
+            <strong>Production Coordinator:</strong> Behiye Erdemir (TR){"\n"}
+            <strong>Setup Assistant:</strong> Hanif Haghtalab (IR){"\n"}
+            <strong>Graphics:</strong> Sofia Talanti (IT){"\n"}
+            <strong>Folder Design:</strong> Viktória Angyal (HU){"\n"}
+            <strong>Video Documentation:</strong> Linaá Pulido Barragán (CO)
+            {"\n"}
+            <strong>Photo Documentation:</strong> Emma Silvana Tripaldi (IT)
+            {"\n"}
+            <strong>Assistant Photo & PR:</strong> Martina Pizzigoni (IT), Alex
+            Fallica (IT){"\n"}
+            <strong>Web:</strong> Juan Pablo Linares Ceballos (CO){"\n"}
+            <strong>PR (Social Media Strategy):</strong> Maria Orciuoli (IT)
+            {"\n"}
+          </p>
+        </section>
       </main>
       <Footer></Footer>
     </>
   )
 }
 
+export const query = graphql`
+  query {
+    allMdx {
+      nodes {
+        frontmatter {
+          title
+          location
+          image_files {
+            childImageSharp {
+              gatsbyImageData(
+                width: 600
+                aspectRatio: 0.75
+                placeholder: BLURRED
+                layout: CONSTRAINED
+                formats: [AUTO, WEBP]
+              )
+            }
+          }
+        }
+        fields {
+          slug
+        }
+      }
+    }
+  }
+`
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Resonating Selves</title>
