@@ -14,7 +14,8 @@ body {
   font-size: calc(18px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
   /*font-size: 20px;*/
   color: white;
-  background-image: url("../images/background-main.png");
+  /*background-image: url("../images/background-main.png");*/
+  background-image: url("http://interface.ufg.at/blog/resonating-selves/resources/background-main.png");
   background-position: center;
   background-repeat: repeat;
   position: absolute;
@@ -60,7 +61,8 @@ a {
 }
 
 main {
-  background-image: url("../images/background-texture.png");
+  /*background-image: url("../images/background-texture.png");*/
+  background-image: url("http://interface.ufg.at/blog/resonating-selves/resources/background-texture.png");
   background-position: center;
   background-repeat: repeat;
   width: calc(100% - 2em);

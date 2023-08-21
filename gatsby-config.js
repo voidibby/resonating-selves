@@ -4,8 +4,9 @@
 module.exports = {
   siteMetadata: {
     title: `Resonating Selves`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `http://interface.ufg.at/blog/resonating-selves/`,
   },
+  pathPrefix: `/blog/resonating-selves`,
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -60,13 +61,10 @@ module.exports = {
         icon: "src/assets/images/icon.png",
       },
     },
-    /*
-    {
-      resolve: `gatsby-plugin-page-creator`,
-      options: {
-        path: `./src/projects`,
-      },
-    },
-    */
   ],
 }
+
+/*
+  Build with prefixed path: 
+  gatsby build --prefix-paths
+*/
